@@ -1,5 +1,3 @@
-/* Bootstrap */
-
 @font-face {
   font-family: 'Icons';
   src: url('../fonts/open-iconic.eot');
@@ -950,3 +948,4 @@
 .oi-zoom-out:before {
   content:'\e0de';
 }
+
