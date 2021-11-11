@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Adimo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../02-CSS/estiloCustomizado.css"/>
+
+        <!-- Scripts -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <!-- Fonte -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+
+        <!-- video explicando as importacoes, lembrando que estou utilizando apenas os imports mais simples -->
+        <!-- https://www.youtube.com/watch?v=gSBL0ILPUEM&list=PLnDvRpP8Bnexu5wvxogy6N49_S5Xk8Cze -->
+
+    </head>
+    <body>
+
+        <header>
+            <div class="container" id="nav-container">
+                <nav class="navbar navbar-expand-lg fixed-top">
+                    <a class="navbar-brand" href="#">ADIMO</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Tuggle navigation">
+                        <span class="navbar-toggle-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" id="Agendamento" href="#">Agendamento</a>
+                            <a class="nav-item nav-link" id="Sobre" href="#">Sobre a ADIMO</a>
+                            <a class="nav-item nav-link" id="Contato" href="#">Entre em Contato</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>                      
+        </header>
+
+        <main>
+
+            <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainSlider" data-slide-to="1"></li>
+                    <li data-target="#mainSlider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../04-Imagens/imovel01/imovel01foto01.jpg" class="d-block w-100" alt="Projetos de e-commerce">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Confira os Imoveis Disponiveis</h2>
+                            <p> </p>
+                            <a href="#" class="main-btn">Imoveis</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../04-Imagens/imovel02/imovel02foto01.jpg" class="d-block w-100" alt="Engenharia de software">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Confira os Imoveis Disponiveis</h2>
+                            <p> </p>
+                            <a href="#" class="main-btn">Imoveis</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../04-Imagens/imovel03/imovel03foto02.jpg" class="d-block w-100" alt="Manutenção em software">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Confira os Imoveis Disponiveis</h2>
+                            <p> </p>
+                            <a href="#" class="main-btn">Imoveis</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div id="abaut-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12"> 
+                            <h3 class="main-title">ADIMO</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="../04-Imagens/imagemEscritorioADIMO.jpg" alt="Escritorio ADIMO">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="about-title">Sobre a ADIMO</h3>
+                            <p>Somos uma imobiliária focada em apartamentos de alto padrão, na cidade de São Paulo e em algumas cidades adjacentes</p>
+                            <p> Fundada nos anos 2000, a ADIMO vem prestando serviços de compra e venda de apartamentos de alto padrão, com preços justos, realizando indicações de outros serviços como construção, acabamento e decoração, possuindo diversos clientes fidelizados e realizados com os serviços prestados.</p>
+                            <p>Apartamentos de alto padrão.</p>
+                            <p>Indicações dos melhores serviços de:</p>
+                            <ul id="about-list">
+                                <li><i class="fas fa-check"></i> Construção.</li>
+                                <li><i class="fas fa-check"></i> Acabamento</li>
+                                <li><i class="fas fa-check"></i> Decoração</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div id="contact-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="main-title">Entre em contato conosco</h3>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                            <i class="fas fa-phone"></i>
+                            <p><span class="contact-tile">Ligue para:</span> (11)99999-9999</p>
+                            <p><span class="contact-tile">Horários:</span> 08h00 - 18h00</p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                            <i class="fas fa-envelope"></i>
+                            <p><span class="contact-tile">Envie um email:</span> adimo.imobiliaria@gmail.com</p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p><span class="contact-tile">Venha tomar um café:</span> Rua Sao Paulo ,1234 - SP</p>
+                        </div>
+                        <div class="col-md-6" id="msg-box">
+                            <p>Ou nos deixe uma mensagem:</p>
+                        </div>
+                        <div class="col-md-6" id="contact-form">
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="E-mail" name="email">
+                                <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                                <input type="submit" class="main-btn">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="copy-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Desenvolvido por <a href="#" target="_blank">ADIMO</a> &copy; 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
