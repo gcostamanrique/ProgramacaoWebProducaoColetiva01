@@ -19,6 +19,7 @@
         crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="../03-JS/SweetAlert.js"></script>
 
         <!-- Fonte -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
@@ -65,24 +66,24 @@
                                 <img src="../04-Imagens/imovel01/imovel01foto01.jpg" class="d-block w-100" alt="Imovel 01">
                                 <div class="carousel-caption d-md-block">
                                     <h2>Confira os Imoveis Disponiveis</h2>
-                                        <p> </p>
-                                        <a href="PaginaSecundaria01Adimo.html" class="main-btn">Imoveis</a>
+                                    <p> </p>
+                                    <a href="PaginaSecundariaImoveisAdimo.html" class="main-btn">Imoveis</a>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="../04-Imagens/imovel02/imovel02foto01.jpg" class="d-block w-100" alt="Imovel 02">
                                 <div class="carousel-caption d-md-block">
                                     <h2>Confira os Imoveis Disponiveis</h2>
-                                        <p> </p>
-                                        <a href="#" class="main-btn">Imoveis</a>
+                                    <p> </p>
+                                    <a href="#" class="main-btn">Imoveis</a>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="../04-Imagens/imovel05/imovel05foto01.jpg" class="d-block w-100" alt="Imovel 03">
                                 <div class="carousel-caption d-md-block">
                                     <h2>Confira os Imoveis Disponiveis</h2>
-                                        <p> </p>
-                                        <a href="#" class="main-btn">Imoveis</a>
+                                    <p> </p>
+                                    <a href="#" class="main-btn">Imoveis</a>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +158,29 @@
                                     <input type="text" class="form-control" placeholder="E-mail" name="email">
                                     <input type="text" class="form-control" placeholder="Assunto" name="subject">
                                     <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
-                                    <input type="submit" class="main-btn">
+                                    <script type="text/javascript">
+                                        function alerta() {
+                                            Swal.fire({
+                                                title: 'Confirmar o envio da mensagem?',
+                                                text: "Esse processo não poderá ser revertido!",
+                                                icon: 'warning',
+                                                showCancelButton: true,
+                                                confirmButtonColor: '#3085d6',
+                                                cancelButtonColor: '#d33',
+                                                confirmButtonText: 'Enviar!',
+                                                cancelButtonText: 'Cancelar!'
+                                            }).then((result) => {
+                                                if (result.isConfirmed) {
+                                                    Swal.fire(
+                                                            'Sua mensagem foi registrada!',
+                                                            'Vamos analisa-la e entrar em contato, obrigado!',
+                                                            'success'
+                                                            );
+                                                }
+                                            });
+                                        }
+                                    </script>
+                                    <a href="#" class="main-btn3" onclick= alerta()>agendar</a>
                                 </form>
                             </div>
                         </div>

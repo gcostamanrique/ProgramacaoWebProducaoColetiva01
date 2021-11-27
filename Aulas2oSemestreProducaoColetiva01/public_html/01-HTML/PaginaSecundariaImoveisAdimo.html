@@ -11,6 +11,7 @@
         <!-- Estilos -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="../02-CSS/estiloPaginaSecundaria01.css"/>
+        <script src="../03-JS/SweetAlert.js"></script>
 
         <!-- Scripts -->
         <script
@@ -117,7 +118,7 @@
                             </ul>
                             <h3 class="center">Valor do imovel: xxxxx</h3>
                             <div class="center">
-                                <a href="PaginaSecundaria02Adimo.html" class="main-btn">Visitar</a>  
+                                <a href="PaginaSecundariaImovel01Adimo.html" class="main-btn">Visitar</a>  
                             </div>                                 
                         </div>
                     </div>
@@ -189,7 +190,7 @@
                             </ul>
                             <h3 class="center">Valor do imovel: xxxxx</h3>
                             <div class="center">
-                                <a href="#" class="main-btn">Visitar</a>  
+                                <a href="PaginaSecundariaImovel02Adimo.html" class="main-btn">Visitar</a>  
                             </div>   
                         </div>
                     </div>
@@ -265,7 +266,7 @@
                             </ul>
                             <h3 class="center">Valor do imovel: xxxxx</h3>
                             <div class="center">
-                                <a href="#" class="main-btn">Visitar</a>  
+                                <a href="PaginaSecundariaImovel03Adimo.html" class="main-btn">Visitar</a>  
                             </div> 
                         </div>
                     </div>
@@ -341,7 +342,7 @@
                             </ul>
                             <h3 class="center">Valor do imovel: xxxxx</h3>
                             <div class="center">
-                                <a href="#" class="main-btn">Visitar</a>  
+                                <a href="PaginaSecundariaImovel04Adimo.html" class="main-btn">Visitar</a>  
                             </div> 
                         </div>
                     </div>
@@ -417,14 +418,14 @@
                             </ul>
                             <h3 class="center">Valor do imovel: xxxxx</h3>
                             <div class="center">
-                                <a href="#" class="main-btn">Visitar</a>  
+                                <a href="PaginaSecundariaImovel05Adimo.html" class="main-btn">Visitar</a>  
                             </div> 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <footer class="background2">
             <section id="Contato-ADIMO">
                 <div id="contact-area">
@@ -454,7 +455,29 @@
                                     <input type="text" class="form-control" placeholder="E-mail" name="email">
                                     <input type="text" class="form-control" placeholder="Assunto" name="subject">
                                     <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
-                                    <input type="submit" class="main-btn">
+                                    <script type="text/javascript">
+                                        function alerta() {
+                                            Swal.fire({
+                                                title: 'Confirmar o envio da mensagem?',
+                                                text: "Esse processo não poderá ser revertido!",
+                                                icon: 'warning',
+                                                showCancelButton: true,
+                                                confirmButtonColor: '#3085d6',
+                                                cancelButtonColor: '#d33',
+                                                confirmButtonText: 'Enviar!',
+                                                cancelButtonText: 'Cancelar!'
+                                            }).then((result) => {
+                                                if (result.isConfirmed) {
+                                                    Swal.fire(
+                                                            'Sua mensagem foi registrada!',
+                                                            'Vamos analisa-la e entrar em contato, obrigado!',
+                                                            'success'
+                                                            );
+                                                }
+                                            });
+                                        }
+                                    </script>
+                                    <a href="#" class="main-btn3" onclick= alerta()>agendar</a>
                                 </form>
                             </div>
                         </div>

@@ -42,6 +42,7 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                         <div class="navbar-nav">
+                            <a class="nav-item nav-link" id="Imoveis" href="PaginaSecundariaImoveisAdimo.html">Imoveis</a>   
                             <a class="nav-item nav-link" id="Agendamento" href="#Agendamento-ADIMO">Agendamento</a>                            
                             <a class="nav-item nav-link" id="Contato" href="#Contato-ADIMO">Entre em Contato</a>
                         </div>
@@ -55,7 +56,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12"> 
-                            <h3 class="main-title">Apartamento 01</h3>
+                            <h3 class="main-title">Apartamento 04</h3>
                         </div>
                         <div class="col-12"> 
                             <div id="mainSlider01" class="carousel slide" data-ride="carousel">
@@ -72,28 +73,28 @@
                                 </ol>             
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="../04-Imagens/imovel01/imovel01foto01.jpg" class="d-block w-100" alt="Imovel 01">
+                                        <img src="../04-Imagens/imovel04/imovel04foto01.jpg" class="d-block w-100" alt="Imovel 04">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../04-Imagens/imovel01/imovel01foto02.jpg" class="d-block w-100" alt="Imovel 01">
+                                        <img src="../04-Imagens/imovel04/imovel04foto02.jpg" class="d-block w-100" alt="Imovel 04">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../04-Imagens/imovel01/imovel01foto03.jpg" class="d-block w-100" alt="Imovel 01">
+                                        <img src="../04-Imagens/imovel04/imovel04foto03.jpg" class="d-block w-100" alt="Imovel 04">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../04-Imagens/imovel01/imovel01foto04.jpg" class="d-block w-100" alt="Imovel 01">
+                                        <img src="../04-Imagens/imovel04/imovel04foto04.jpg" class="d-block w-100" alt="Imovel 04">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../04-Imagens/imovel01/imovel01foto05.jpg" class="d-block w-100" alt="Imovel 01">
+                                        <img src="../04-Imagens/imovel04/imovel04foto05.jpg" class="d-block w-100" alt="Imovel 04">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../04-Imagens/imovel01/imovel01foto06.jpg" class="d-block w-100" alt="Imovel 01">
+                                        <img src="../04-Imagens/imovel04/imovel04foto06.jpg" class="d-block w-100" alt="Imovel 04">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../04-Imagens/imovel01/imovel01foto07.jpg" class="d-block w-100" alt="Imovel 01">
+                                        <img src="../04-Imagens/imovel04/imovel04foto07.jpg" class="d-block w-100" alt="Imovel 04">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../04-Imagens/imovel01/imovel01foto08.jpg" class="d-block w-100" alt="Imovel 01">
+                                        <img src="../04-Imagens/imovel04/imovel04foto08.jpg" class="d-block w-100" alt="Imovel 04">
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#mainSlider01" role="button" data-slide="prev">
@@ -137,30 +138,29 @@
                                     <div class="col-md-12">
                                         <div class="center2">
                                             <script type="text/javascript">
-                                                function alerta() {
+                                                function alerta01() {
                                                     Swal.fire({
-                                                        title: 'Tem certeza que deseja agendar?',
+                                                        title: 'Validar dados para o agendamento?',
                                                         text: "Esse processo não poderá ser revertido!",
                                                         icon: 'warning',
                                                         showCancelButton: true,
                                                         confirmButtonColor: '#3085d6',
                                                         cancelButtonColor: '#d33',
-                                                        confirmButtonText: 'Sim, desejo agendar!',
+                                                        confirmButtonText: 'Sim, desejo validar!',
                                                         cancelButtonText: 'Cancelar!'
                                                     }).then((result) => {
                                                         if (result.isConfirmed) {
                                                             Swal.fire(
-                                                                    'Agendamento confirmado!',
+                                                                    'Seus dados foram consultados e aprovados!',
                                                                     'Seu agendamento foi realizado com sucesso!',
                                                                     'success'
                                                                     );
                                                         }
                                                     });
-
                                                 }
                                             </script>
-                                            <a href="#" class="main-btn2" onclick= alerta()>agendar</a>
-                                            
+                                            <a href="#" class="main-btn2" onclick= alerta01()>agendar</a>
+
                                         </div>  
                                     </div>
                                 </div>
@@ -200,7 +200,29 @@
                                     <input type="text" class="form-control" placeholder="E-mail" name="email">
                                     <input type="text" class="form-control" placeholder="Assunto" name="subject">
                                     <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
-                                    <input type="submit" class="main-btn">
+                                    <script type="text/javascript">
+                                        function alerta() {
+                                            Swal.fire({
+                                                title: 'Confirmar o envio da mensagem?',
+                                                text: "Esse processo não poderá ser revertido!",
+                                                icon: 'warning',
+                                                showCancelButton: true,
+                                                confirmButtonColor: '#3085d6',
+                                                cancelButtonColor: '#d33',
+                                                confirmButtonText: 'Enviar!',
+                                                cancelButtonText: 'Cancelar!'
+                                            }).then((result) => {
+                                                if (result.isConfirmed) {
+                                                    Swal.fire(
+                                                            'Sua mensagem foi registrada!',
+                                                            'Vamos analisa-la e entrar em contato, obrigado!',
+                                                            'success'
+                                                            );
+                                                }
+                                            });
+                                        }
+                                    </script>
+                                    <a href="#" class="main-btn3" onclick= alerta()>agendar</a>
                                 </form>
                             </div>
                         </div>
